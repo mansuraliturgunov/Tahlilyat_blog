@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_set('Asia/Tashkent');
 
 $servername = getenv('DB_HOST');
 $username = getenv('DB_USER');
