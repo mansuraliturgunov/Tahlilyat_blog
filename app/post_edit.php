@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['PUT'])) {
 $title = 'Post Yaratish';
 require('./includes/header.php');
 ?>
-<div class="container py-4 mt-5">
+<div class="container py-4">
     <header class="pb-3 mb-4 border-bottom">
         <img width="40" class="me-2" viewBox="0 0 118 94" role="img" src="./photos/favicon.png" alt="">
         <span class="fs-4">Postni Tahrirlash</span>

@@ -15,7 +15,7 @@ $post = $statement->fetch();
 
 
 
-<div class="col-lg-8 mx-auto p-4 py-md-5 mt-5">
+<div class="col-lg-8 mx-auto p-4 py-md-5">
     <img src="https://static4.tgstat.ru/channels/_0/60/603ecb6f19c49c980b38e5240b856145.jpg" alt="" class="bd-placeholder-img card-img-top" preserveAspectRatio="xMidYMid slice" role="img" >
 
     <h1 class="text-body-emphasis"><?= $post["title"] ?></h1>
