@@ -16,7 +16,7 @@ require('./includes/header.php')
                     <div class="carousel-caption text-start">
                         <h1>Earth. Reboot (Yer. Qayta ishga tushirish)</h1>
                         <p class="opacity-75">"Yer. Qayta ishga tushirish " (2021)-bu ekologik falokat oqibatlari va insoniyatning qonga chanqoq mutant o'simliklarga qarshi turishi haqida hikoya qiluvchi ajoyib blokbaster.</p>
-                        <p><a class="btn btn-lg btn-primary" href="https://yandex.uz/video/preview/9629173969193971076?text=земля%20перезагрузка%202021%20trailer%20youtube&path=search_snippet&parent-reqid=1775902131895193-13850821846979783661-balancer-l7leveler-kubr-yp-sas-189-BAL&from_type=snip-videothumb">Treylerini ko'rish</a></p>
+                        <p><a target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary" href="https://yandex.uz/video/preview/9629173969193971076?text=земля%20перезагрузка%202021%20trailer%20youtube&path=search_snippet&parent-reqid=1775902131895193-13850821846979783661-balancer-l7leveler-kubr-yp-sas-189-BAL&from_type=snip-videothumb">Treylerini ko'rish</a></p>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@ require('./includes/header.php')
                     <div class="carousel-caption">
                         <h1>SINNERS (Gunohkorlar)</h1>
                         <p>"Gunohkorlar" filmi — Rayan Kugler tomonidan suratga olingan amerikalik triller va drama janridagi film. Bosh rollarni Maykl B. Jordan ijro etgan.</p>
-                        <p><a class="btn btn-lg btn-primary" href="https://yandex.uz/video/preview/15546873584495081703?from=tabbar&parent-reqid=1775901853770090-864625910952358381-balancer-l7leveler-kubr-yp-sas-225-BAL&text=Sinners">Treylerini ko'rish</a></p>
+                        <p><a target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary" href="https://yandex.uz/video/preview/15546873584495081703?from=tabbar&parent-reqid=1775901853770090-864625910952358381-balancer-l7leveler-kubr-yp-sas-225-BAL&text=Sinners">Treylerini ko'rish</a></p>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@ require('./includes/header.php')
                     <div class="carousel-caption text-end">
                         <h1>TENNET</h1>
                         <p>Tenet — 2020-yilda chiqqan ilmiy fantastika, triller va jangari janrlaridagi film bo'lib, uni Kristofer Nolan yozgan va boshqargan. Filmda bosh rollarni Jon David Washington, Robert Pattinson, Elizabeth Debicki, Dimple Kapadia, Michael Caine va Kenneth Branagh ijro etgan</p>
-                        <p><a class="btn btn-lg btn-primary" href="https://yandex.uz/video/preview/4252341488590518349?from=tabbar&parent-reqid=1775901982787940-2799472565462389612-balancer-l7leveler-kubr-yp-sas-225-BAL&reqid=1775901972023242-8908689792656100255-balancer-l7leveler-kubr-yp-sas-225-BAL&suggest_reqid=553457927176987767319719057553824&text=tennet+trailer">Treylerini ko'rish</a></p>
+                        <p><a target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary" href="https://yandex.uz/video/preview/4252341488590518349?from=tabbar&parent-reqid=1775901982787940-2799472565462389612-balancer-l7leveler-kubr-yp-sas-225-BAL&reqid=1775901972023242-8908689792656100255-balancer-l7leveler-kubr-yp-sas-225-BAL&suggest_reqid=553457927176987767319719057553824&text=tennet+trailer">Treylerini ko'rish</a></p>
                     </div>
                 </div>
             </div>
