@@ -30,11 +30,11 @@ require('./includes/header.php');
             <div class="container-fluid py-5">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Post Sarlavhasi</label>
-                    <input required="text" name='title' class="form-control" id="exampleFormControlInput1" placeholder="Post Sarlavhasi">
+                    <input required type="text" name='title' class="form-control" id="exampleFormControlInput1" placeholder="Post Sarlavhasi">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Post Matni</label>
-                    <textarea require class="form-control" name='body' id="exampleFormControlTextarea1" rows="3" placeholder="Post Matni"></textarea>
+                    <textarea required class="form-control" name='body' id="exampleFormControlTextarea1" rows="3" placeholder="Post Matni"></textarea>
                 </div>
                 <button class="btn btn-primary" type="submit">Saqlash</button>
                 <a class="btn btn-primary" href="./blog.php">Orqaga</a>
