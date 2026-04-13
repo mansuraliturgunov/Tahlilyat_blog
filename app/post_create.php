@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = $_POST['title'];
     $body = $_POST['body'];
 
-    $statment = $pdo->prepare('INSERT INTO tahlilyat (title, body) VALUE (?, ?)');
+    $statment = $pdo->prepare('INSERT INTO tahlilyat (title, body) VALUES (?, ?)');
     $statment->execute([$title, $body]);
 
     $_SESSION['successful'] = "Post Muofaqiyatli Yaratildi!";
