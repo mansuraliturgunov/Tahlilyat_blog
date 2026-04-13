@@ -3,17 +3,17 @@ require('./includes/database.php');
 
 $id = $_GET['id'];
 
-$statement = $pdo->prepare('SELECT * FROM tahlilyat WHERE id = ?');
-$statement->execute([$id]);
-$post = $statement->fetch();
+$statment = $pdo->prepare('SELECT * FROM tahlilyat WHERE id = ?');
+$statment->execute([$id]);
+$post = $statment->fetch();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['PUT'])) {
     $post_id = $_POST['post_id'];
     $title = $_POST['title'];
     $body = $_POST['body'];
 
-    $statement = $pdo->prepare('UPDATE tahlilyat  SET title = :title, body = :body WHERE id = :id ');
-    $statement->execute([
+    $statment = $pdo->prepare('UPDATE tahlilyat  SET title = :title, body = :body WHERE id = :id ');
+    $statment->execute([
         'id' => $post_id,
         'title' => $title, 
         'body' => $body
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['PUT'])) {
 $title = 'Post Yaratish';
 require('./includes/header.php');
 ?>
-<div class="container py-4">
+<div class="container py-4 ">
     <header class="pb-3 mb-4 border-bottom">
         <img width="40" class="me-2" viewBox="0 0 118 94" role="img" src="./photos/favicon.png" alt="">
         <span class="fs-4">Postni Tahrirlash</span>
@@ -40,11 +40,11 @@ require('./includes/header.php');
             <div class="container-fluid py-5">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Post Sarlavhasi</label>
-                    <input required="text" name='title' class="form-control" id="exampleFormControlInput1" placeholder="Post Sarlavhasi" value="<?= $post['title'] ?>">
+                    <input required type="text" name='title' class="form-control" id="exampleFormControlInput1" placeholder="Post Sarlavhasi" value="<?= $post['title'] ?>">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Post Matni</label>
-                    <textarea require class="form-control" name='body' id="exampleFormControlTextarea1" rows="3"> <?= $post['body'] ?> </textarea>
+                    <textarea required class="form-control" name='body' id="exampleFormControlTextarea1" rows="3"> <?= $post['body'] ?> </textarea>
                 </div>
 
                     <input type="hidden" name="PUT">

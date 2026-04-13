@@ -7,8 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = $_POST['title'];
     $body = $_POST['body'];
 
-    $statement = $pdo->prepare('INSERT INTO tahlilyat (title, body) VALUES (?, ?)');
-    $statement->execute([$title, $body]);
+    $statment = $pdo->prepare('INSERT INTO tahlilyat (title, body) VALUE (?, ?)');
+    $statment->execute([$title, $body]);
 
     $_SESSION['successful'] = "Post Muofaqiyatli Yaratildi!";
     header("Location: ./blog.php");
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $title = 'Post Yaratish';
 require('./includes/header.php');
 ?>
-<div class="container py-4">
+<div class="container py-4 ">
     <header class="pb-3 mb-4 border-bottom">
         <img width="40" class="me-2" viewBox="0 0 118 94" role="img" src="./photos/favicon.png" alt="">
         <span class="fs-4">Yangi Post Yaratish</span>

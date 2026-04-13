@@ -1,4 +1,6 @@
 <?php
+require('./includes/database.php');
+
 $title = 'BIZ HAQIMIZDA';
 require('./includes/header.php');
 

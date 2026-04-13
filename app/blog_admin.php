@@ -1,10 +1,6 @@
 <?php
 require('./includes/database.php');
 
-if (isset($_SESSION['admin'])){
-    header("Location: ./blog_admin.php");
-    exit;
-}
 
 if ($_SERVER["REQUEST_METHOD"] == 'POST' && isset($_POST['DELETE'])) {
 
@@ -31,13 +27,13 @@ $posts = $statment->fetchAll();
 
 
 ?>
-<section class="py-5 text-center container ">
+<section class="py-5 text-center container mt-5">
     <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Haftaning Top Yangiliklar</h1>
             <p class="lead text-body-secondary">Bu sahifada shu haftada xit bolaytga kinolarni tahlil qilib chiqamiz</p>
             <p>
-                <a href="/" class="btn btn-primary my-2">Bosh Sahifa</a>
+                <a href="./post_create.php" class="btn btn-primary my-2">Yangi Post Yaratish</a>
             </p>
             <?php if (isset($_SESSION['successful'])): ?>
                 <div class="alert alert-success" role="alert">
@@ -65,7 +61,13 @@ $posts = $statment->fetchAll();
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
 
-                                  <a class="btn btn-sm btn-outline-secondary" href="./post.php?id=<?= $post['id'] ?>">Post Viev</a>
+                                  <a class="btn btn-sm btn-outline-secondary" href="./post_edit.php?id=<?= $post['id'] ?>">Edit</a>
+
+                                    <form action="" method="POST" onSubmit="return confirm('Rosdan ham postni ochirmoqchimisz?')">
+                                        <input type="hidden" name="DELETE">
+                                        <input type="hidden" name="id" value="<?= $post['id'] ?>">
+                                        <button type="submit" class="btn btn-sm btn-outline-secondary">DELET</button>
+                                    </form>
 
                                 </div>
                                 <small class="text-body-secondary"><?= $post['created_at'] ?></small>
