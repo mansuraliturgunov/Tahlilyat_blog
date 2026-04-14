@@ -1,8 +1,8 @@
 <?php
 require('./includes/database.php');
 
-$login = 'admin';
-$parol = 'admin';
+$login = 'admin12';
+$parol = 'admin21';
 
 if (isset($_GET['exit'])) {
     $_SESSION['successful'] = "Endi siz oddiy User siz!";
