@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Mansurali !</h1>
+<h1 align="center">Hi 👋, I'm Mansurali </h1>
 <h3 align="center">A passionate backend developer from Uzbekistan</h3>
 
 - 📫 How to reach me **mansuraliturgunov6@gmail.com**
